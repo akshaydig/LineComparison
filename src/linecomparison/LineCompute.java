@@ -25,10 +25,22 @@ public class LineCompute {
 		System.out.println("Enter the y coordinate for point 2: ");
 		double y2 = scan.nextDouble();
 
-		LineCompute object = new LineCompute();
-		double distance = object.distance(x1, y1, x2, y2);
+		System.out.println("Enter the x coordinate for point 1: ");
+		double x11 = scan.nextDouble();
 
-		System.out.println("The distance between the two points is " + distance + " .");
+		System.out.println("Enter the y coordinate for point 1: ");
+		double y11 = scan.nextDouble();
+
+		System.out.println("Enter the x coordinate for point 2: ");
+		double x22 = scan.nextDouble();
+
+		System.out.println("Enter the y coordinate for point 2: ");
+		double y22 = scan.nextDouble();
+
+		LineCompute object = new LineCompute();
+		Double line1 = object.distance(x1, y1, x2, y2);
+		Double line2 = object.distance(x11, y11, x22, y22);
+
+		System.out.println("Two lines are equal :" + line1.equals(line2));
 	}
 }
-

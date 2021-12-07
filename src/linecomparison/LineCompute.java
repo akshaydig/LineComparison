@@ -41,6 +41,11 @@ public class LineCompute {
 		Double line1 = object.distance(x1, y1, x2, y2);
 		Double line2 = object.distance(x11, y11, x22, y22);
 
-		System.out.println("Two lines are equal :" + line1.equals(line2));
+		if (Double.compare(line1, line2) == 0) {
+			System.out.println("Two lines are equal");
+		} else if (Double.compare(line1, line2) < 0) {
+			System.out.println("Line1 is less than Line2");
+		} else
+			System.out.println("Line1 is Greater than Line2");
 	}
 }
